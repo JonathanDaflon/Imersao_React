@@ -2,15 +2,16 @@ import React from 'react'
 import Logo from '../../assets/img/Logo.png'
 import './menu.css'
 import { Button } from '../button/index'
+import { Link } from 'react-router-dom'
 
 const Menu: React.FC = () => {
     return (
         <nav className="Menu">
-            <a href="/">
+            <Link to="/">
                 <img className="Logo" src={Logo} alt='aluraFlix logo' />
-            </a>
+            </Link>
 
-            <Button as="a" className="ButtonLink">
+            <Button as={Link} className="ButtonLink" to="/cadastro/video">
                 Novo Vídeo
             </Button>
         </nav>

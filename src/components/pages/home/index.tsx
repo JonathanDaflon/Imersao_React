@@ -1,12 +1,12 @@
 import React from 'react';
-import Menu from './components/menu'
-import { BannerMain } from './components/bannerMain'
-import { VideoCardGroup as Carousel} from './components/carousel'
-import { Footer } from '../src/components/footer'
-import dadosIniciais from './data/dados_iniciais.json'
+import Menu from '../../menu'
+import { BannerMain } from '../../bannerMain'
+import { VideoCardGroup as Carousel} from '../../carousel'
+import { Footer } from '../../footer'
+import dadosIniciais from '../../../data/dados_iniciais.json'
 
 
-const App: React.FC = () => {
+const Home: React.FC = () => {
 
     console.log(dadosIniciais)
 
@@ -49,4 +49,4 @@ const App: React.FC = () => {
     );
   }
 
-export default App;
+export default Home;

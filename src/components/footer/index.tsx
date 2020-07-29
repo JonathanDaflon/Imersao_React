@@ -15,5 +15,5 @@ export const Footer: React.FC = () => {
         </a>
       </p>
     </FooterBase>
-  );
+  )
 }
